@@ -1,0 +1,44 @@
+{
+	"manifest_version": 2.0,
+	"id": "host_inventory",
+	"name": "Host Inventory",
+	"namespace": "HostInventory",
+	"version": "1.0.0",
+	"author": "karthick-dkk",
+	"description": "Inventory → Host Inventory: every Linux server, Windows server and website Zabbix monitors, with OS, hostname, architecture, CPU, memory, disks and services read live from their items, and admin-defined fields (client, branch, type, access …) kept as inv: host tags. Bulk edit, CSV import and export, Excel export, websites added with a web check, Zabbix host inventory filled from items.",
+	"actions": {
+		"hostinventory.list": {
+			"class": "InventoryList",
+			"view": "hostinventory.list",
+			"layout": "layout.htmlpage"
+		},
+		"hostinventory.save": {
+			"class": "InventorySave"
+		},
+		"hostinventory.website": {
+			"class": "WebsiteAdd"
+		},
+		"hostinventory.fields": {
+			"class": "FieldList",
+			"view": "hostinventory.fields",
+			"layout": "layout.htmlpage"
+		},
+		"hostinventory.fields.save": {
+			"class": "FieldSave",
+			"view": "hostinventory.fields",
+			"layout": "layout.htmlpage"
+		},
+		"hostinventory.import": {
+			"class": "ImportUpload",
+			"view": "hostinventory.import",
+			"layout": "layout.htmlpage"
+		},
+		"hostinventory.import.apply": {
+			"class": "ImportApply"
+		},
+		"hostinventory.automatic": {
+			"class": "InventoryAutomatic"
+		}
+	},
+	"url": "https://github.com/karthick-dkk/zabbix-host-inventory"
+}

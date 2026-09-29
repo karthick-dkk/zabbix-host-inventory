@@ -1,0 +1,11 @@
+{
+  "name": "zabbix-host-inventory",
+  "private": true,
+  "description": "Tests for the Host Inventory Zabbix module.",
+  "scripts": {
+    "test": "php tests/spec.test.php && node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^24.1.0"
+  }
+}
